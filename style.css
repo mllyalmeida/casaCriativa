@@ -1,30 +1,133 @@
 body {
+
   background: #e5e5e5;
   color: #25282b;
 
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+hide{
+  display:none;
+}
+a{
+  color: #ff5eff;
+  font-weight: bold;
+  text-decoration:none;
+}
+a:hover{
+  text-decoration: underline;
+}
+p,.description{
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing:0.1px;
 }
 
+#container {
+  width: 80%;
+  max-width: 980px;
+
+  margin: 40px auto;
+  
+  display: flex
+
+}
+#intro{
+  width: 300px;
+  margin-right: 20px;
+  text-align: left;
+}
+main{
+  margin:32px 0;
+  
+}
+#buttons {
+  display:flex;
+  justify-content: space-evenly ;
+  
+  margin-bottom:32px;
+}
 button {
+  background: none;
   color: #ff5e84;
 
   border: none;
+  
+  font-size: 14px;
   font-weight: bold;
-  background: none;
+  line-height: 18px;
+  letter-spacing:0.2px;
+  
+  font-weight: bold;
+  cursor:pointer;
+  outline:none
+}
+button:hover{
+  text-decoration: underline;
 }
 
 .fat {
   color: white;
   background: #ff5e84;
+  width: 150px;
+  height: 40px;
+
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.20)
+
 }
-
-#footer a {
-  color: #25282b;
-
+.fat:hover{
   text-decoration: none;
-  cursor: pointer;
+}
+footer{
+  text-align: center;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing:0.2px;
+
+  color:#777
+}
+footer a {
+  opacity:0.6;
+}
+#buttons , footer{
+  text-align: center;
 }
 
 .hide {
   display: none;
+}
+
+.content {
+  text-align: left;
+}
+
+.ideas{
+  display:flex;
+  background-color: #fff;
+  box-shadow: 0 4px 16px -8px #25282b;
+  border-radius: 8px;
+
+  padding:32px;
+  
+  margin-bottom: 32px;
+}
+.ideas img {
+  width: 60px;
+  height:60px;
+
+  margin-right: 32px;
+}
+.ideas h3{
+  margin:0;
+}
+.ideas p{
+  margin: 8px 0;
+  color:#777
+}
+
+.ideas .description {
+  margin:16px 0;
 }
